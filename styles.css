@@ -11,7 +11,7 @@
 .header-t {
     display: flex;
     justify-content: space-between;
-    background-color: #C1D8A3;
+    background-color: #29AB87;
     padding: 6px 60px;
     
 }
@@ -119,11 +119,18 @@
     padding: 10px;
 }
 
-
 .language-dropdown {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
+}
+
+.header-b {
+    padding-left: 60px;
+}
+
+.header-b img {
+    width: 40%;
 }
