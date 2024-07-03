@@ -9,27 +9,29 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-t">
+    <div class="header-t">
+        <div class="main-header-t">
             <div class="social-icons">
-                <div class="twitter">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                <a href="#" class="twitter">
+                    <svg class="w-[12px] h-[12px] text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
                             d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
                             clip-rule="evenodd" />
                     </svg>
-                </div>
-                <div class="facebook"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+
+
+                </a>
+                <a href="#" class="facebook"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
                             d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
                             clip-rule="evenodd" />
                     </svg>
-                </div>
-                <div class="linkedin"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                </a>
+                <a href="#" class="linkedin"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -37,18 +39,18 @@
                             clip-rule="evenodd" />
                         <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                     </svg>
-                </div>
-                <div class="youtube"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                </a>
+                <a href="#" class="youtube"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                         viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
                             d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
                             clip-rule="evenodd" />
                     </svg>
-                </div>
+                </a>
             </div>
             <div class="header-contacts">
-                <div>
+                <div class="phone-no">
                     <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             viewBox="0 0 24 24">
@@ -58,7 +60,7 @@
                     </span>
                     <span>020 6980100</span>
                 </div>
-                <div>
+                <a href="#" class="user-portal">
                     <span><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             viewBox="0 0 24 24">
@@ -68,13 +70,26 @@
                         </svg>
                     </span>
                     <span>Candidate Portal</span>
-                </div>
-                <div>QCL Portal</div>
-                <div>Staff Portal</div>
+                </a>
+                <a href="#">QCL Portal</a>
+                <a href="#">Staff Portal</a>
             </div>
         </div>
-        <div class="header-b"></div>
-    </header>
+
+        <!--language dropdown-->
+        <div class="search-bar">
+            <select class="language-dropdown">
+
+                <option value="mn">Select Language</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
+    </div>
+    <div class="header-b"></div>
     <script src="scripts.js"></script>
 </body>
 
