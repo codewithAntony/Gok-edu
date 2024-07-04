@@ -382,6 +382,15 @@ hr {
 .main-regulator {
     display: flex;
     gap: 1px;
+    border: solid black 1px;
+    padding: 15px 8px;
+    cursor: pointer;
+}
+
+.main-regulator:hover {
+    background-color: white;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    border: solid gray 1px;
 }
 
 .main-regulator svg {
@@ -390,9 +399,9 @@ hr {
 }
 
 .regulator-title {
-    display: flexbox;
-    justify-content: flex-start;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
 .regulator-title p:first-of-type {
@@ -408,7 +417,10 @@ hr {
 
 .main-accreditation{
     display: flex;
-    gap: 5px;
+    gap: 1px;
+    border: solid black 1px;
+    padding: 15px 8px;
+    cursor: pointer;
 }
 
 .main-accreditation svg {
@@ -416,10 +428,16 @@ hr {
     color: #24C4BC;
 }
 
+.main-accreditation:hover {
+    background-color: white;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    border: solid gray 1px;
+}
+
 .accreditation-title {
-    display: flexbox;
-    justify-content: flex-start;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
 .accreditation-title p:first-of-type {
@@ -435,7 +453,16 @@ hr {
 
 .main-bar {
     display: flex;
-    gap: 5px;
+    gap: 1px;
+    border: solid black 1px;
+    padding: 15px 8px;
+    cursor: pointer;
+}
+
+.main-bar:hover {
+    background-color: white;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    border: solid gray 1px;
 }
 
 .main-bar svg {
@@ -444,9 +471,9 @@ hr {
 }
 
 .bar-title {
-    display: flexbox;
-    justify-content: flex-start;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
 
 .bar-title p:first-of-type {
@@ -458,4 +485,74 @@ hr {
 .bar-title p {
     font-weight: 500;
     line-height: 1.5;
+}
+
+/* Performance metrics */
+.main-metrics {
+    gap: 35px;
+    margin: 50px;
+}
+
+.main-metrics h2{
+    color: black;
+    text-align: center;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+
+.main-metrics hr {
+    border: none;
+    height: 4px;
+    background-color: #24C4BC;
+    margin: 5px auto;
+    width: 16%;
+    margin-bottom: 50px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.performance-metric {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.outer-circle {
+    width: 75px;
+    height: 75px;
+    border: 1px solid #E5E4E2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 55px;
+    height: 55px;
+    background-color: #24C4BC;
+    border: gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle svg {
+    color: white;
+    font-size: 24px;
+}
+
+.candidates {
+    display: flex;
+    flex-direction: column;
+}
+
+.candidates span{
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: large;
 }
