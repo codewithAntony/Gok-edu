@@ -11,7 +11,7 @@
 .header-t {
     display: flex;
     justify-content: space-between;
-    background-color: #29AB87;
+    background-color: #24C4BC;
     padding: 6px 60px;
     
 }
@@ -134,3 +134,88 @@
 .header-b img {
     width: 40%;
 }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #24C4BC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 75px;
+    list-style-type: none;
+}
+
+.navbar li {
+    position: relative;
+    font-size: large;
+    font-size: 900;
+}
+
+.navbar a:hover {
+    color: #FFFFFF;
+}
+
+.navbar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #835835;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropbtn:hover {
+    color: #FFFFFF;
+}
+
+.dropbtn a:hover {
+    color: #FFFFFF;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #835835;
+}
+/*
+<img src="https://images.pexels.com/photos/6502626/pexels-photo-6502626.jpeg?auto=compress&cs=tinysrgb&w=600"
+<img src="https://images.pexels.com/photos/532786/pexels-photo-532786.jpeg?auto=compress&cs=tinysrgb&w=600"
+<img src="https://images.pexels.com/photos/287237/pexels-photo-287237.jpeg?auto=compress&cs=tinysrgb&w=600"
+<img src="https://images.pexels.com/photos/6502628/pexels-photo-6502628.jpeg?auto=compress&cs=tinysrgb&w=600"
+*/
