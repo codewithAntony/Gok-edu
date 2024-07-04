@@ -213,9 +213,113 @@ hr {
     height: 1px;
     background: #835835;
 }
+
 /*
-<img src="https://images.pexels.com/photos/6502626/pexels-photo-6502626.jpeg?auto=compress&cs=tinysrgb&w=600"
-<img src="https://images.pexels.com/photos/532786/pexels-photo-532786.jpeg?auto=compress&cs=tinysrgb&w=600"
-<img src="https://images.pexels.com/photos/287237/pexels-photo-287237.jpeg?auto=compress&cs=tinysrgb&w=600"
-<img src="https://images.pexels.com/photos/6502628/pexels-photo-6502628.jpeg?auto=compress&cs=tinysrgb&w=600"
+<img src="https://cle.or.ke/sites/default/files/styles/medium/public/2024-05/welcome.PNG?itok=nNe_hHxI"
+<img src="https://cle.or.ke/sites/default/files/styles/medium/public/2024-05/Agcle.JPG?itok=ShBMpbE9"
+<img src="https://images.pexels.com/photos/3279203/pexels-photo-3279203.jpeg?auto=compress&cs=tinysrgb&w=600"
+<img src="https://images.pexels.com/photos/3279196/pexels-photo-3279196.jpeg?auto=compress&cs=tinysrgb&w=600"
 */
+/* slideshow */
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Hide the images by default */
+.slideshow-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.mySlides-fade {
+    min-width: 100%;
+    height: 100%;
+}
+
+.mySlides-fade img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* untro to cle*/
+.container {
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 8px;
+    padding-top: 200px;
+    max-width: 1000px;
+}
+
+.container-l {
+
+}
+
+.container-l img{
+    width: 100%;
+}
+
+.container-intro {
+
+}
