@@ -28,8 +28,6 @@ function showSlides(n) {
 }
 
 //countdown
-// script.js
-// Function to animate the counter
 function animateCounter(element, targetNumber, duration) {
     let start = 0;
     const increment = targetNumber / (duration / 10);

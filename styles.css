@@ -556,3 +556,73 @@ hr {
     line-height: 1.5;
     font-size: large;
 }
+
+/* Contact info */
+.contact {
+    background-color: #24C4BC;
+    padding-top: 55px;
+    padding-bottom: 85px;
+    margin: 50px 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-info h2 {
+    color: white;
+    padding-bottom: 25px;
+}
+
+.contact-bread {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.contact-bread span {
+    color: white;
+}
+
+.contact-bread svg {
+    color: #464CAC;
+}
+
+.contact-info .contact-bread:nth-of-type(4) {
+    cursor: pointer;
+}
+
+.contact-info .contact-bread:nth-of-type(5) {
+    cursor: pointer;
+}
+
+/* footer */
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 10px;
+}
+
+.copyright-l {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.copyright-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyright-r p {
+    font-size: medium;
+    font-weight: 700;
+}
