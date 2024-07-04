@@ -214,15 +214,6 @@ hr {
     background: #835835;
 }
 
-/*
-<img src="https://cle.or.ke/sites/default/files/styles/medium/public/2024-05/welcome.PNG?itok=nNe_hHxI"
-<img src="https://cle.or.ke/sites/default/files/styles/medium/public/2024-05/Agcle.JPG?itok=ShBMpbE9"
-<img src="https://images.pexels.com/photos/3279203/pexels-photo-3279203.jpeg?auto=compress&cs=tinysrgb&w=600"
-<img src="https://images.pexels.com/photos/3279196/pexels-photo-3279196.jpeg?auto=compress&cs=tinysrgb&w=600"
-*/
-/* slideshow */
-
-
 /* Slideshow container */
 .slideshow-container {
     position: relative;
@@ -303,17 +294,13 @@ hr {
     to {opacity: 1}
 }
 
-/* untro to cle*/
+/* intro to cle*/
 .container {
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     display: flex;
-    gap: 8px;
-    padding-top: 200px;
-    max-width: 1000px;
-}
-
-.container-l {
-
+    gap: 10px;
+    padding: 40px 60px;
+    margin-top: 15px;
 }
 
 .container-l img{
@@ -321,5 +308,39 @@ hr {
 }
 
 .container-intro {
+    display:flexbox;
+    gap: 20px;
+}
 
+.container-intro h3 {
+    font-size: large;
+    font-weight: 700;
+    color: #464CAC;
+}
+
+.container-intro hr {
+    border: none;
+    height: 3px;
+    background-color: #333;
+    margin: 15px 0;
+    width: 30%;
+}
+
+.container-intro p {
+    margin-top: 40px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.container-intro button {
+    padding: 9px 20px;
+    text-align: center;
+    color: white;
+    background-color: #464CAC;
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
