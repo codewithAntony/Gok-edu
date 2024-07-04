@@ -97,7 +97,7 @@
 }
 
 .phone-no span:first-of-type {
-    color: #835835;
+    color: #464CAC;
 }
 
 .user-portal {
@@ -110,7 +110,7 @@
 }
 
 .user-portal span:first-of-type {
-    color: #835835;
+    color: #464CAC;
 }
 
 .search-bar {
@@ -343,4 +343,119 @@ hr {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+/* Services */
+.main-services {
+    padding: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #464CAC;
+}
+
+.main-services h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+
+.main-services hr {
+    border: none;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+    width: 10%;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.main-regulator {
+    display: flex;
+    gap: 1px;
+}
+
+.main-regulator svg {
+    width: 70%;
+    color: #24C4BC;
+}
+
+.regulator-title {
+    display: flexbox;
+    justify-content: flex-start;
+    color: white;
+}
+
+.regulator-title p:first-of-type {
+    font-weight: bold;
+    color: #24C4BC;
+    padding-bottom: 15px;
+}
+
+.regulator-title p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.main-accreditation{
+    display: flex;
+    gap: 5px;
+}
+
+.main-accreditation svg {
+    width: 70%;
+    color: #24C4BC;
+}
+
+.accreditation-title {
+    display: flexbox;
+    justify-content: flex-start;
+    color: white;
+}
+
+.accreditation-title p:first-of-type {
+    font-weight: bold;
+    color: #24C4BC;
+    padding-bottom: 15px;
+}
+
+.accreditation-title p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.main-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.main-bar svg {
+    width: 70%;
+    color: #24C4BC;
+}
+
+.bar-title {
+    display: flexbox;
+    justify-content: flex-start;
+    color: white;
+}
+
+.bar-title p:first-of-type {
+    font-weight: bold;
+    color: #24C4BC;
+    padding-bottom: 15px;
+}
+
+.bar-title p {
+    font-weight: 500;
+    line-height: 1.5;
 }
