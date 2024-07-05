@@ -476,6 +476,8 @@ nav ul li a:hover {
 .main-metrics {
     gap: 35px;
     margin: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .main-metrics h2{
@@ -543,31 +545,49 @@ nav ul li a:hover {
 }
 
 /* Contact info */
-.contact {
+.main-contact {
     background-color: #008205;
-    padding-top: 55px;
-    padding-bottom: 85px;
-    margin: 50px 250px;
+    margin-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.contact-info {
+.contact {
+    display: flex;
+    gap: 90px;
+}
+
+.contact-info-title {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 
-.contact-info h2 {
+.contact-info-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-header h2 {
     color: white;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.contact-info-header hr {
+    border: none;
+    height:2px;
+    background-color: white;
+    margin: 5px auto;
+    width: 100%;
 }
 
 .contact-bread {
     display: flex;
     gap: 15px;
     align-items: center;
-    padding-top: 8px;
+    padding-top: 3px;
 }
 
 .contact-bread span {
@@ -578,12 +598,118 @@ nav ul li a:hover {
     color: #464CAC;
 }
 
+.contact-bread a {
+    text-decoration: none;
+}
+
 .contact-info .contact-bread:nth-of-type(4) {
     cursor: pointer;
 }
 
-.contact-info .contact-bread:nth-of-type(5) {
+.contact-info-title .contact-bread:nth-of-type(5) {
     cursor: pointer;
+}
+
+.e-services {
+    display: flex;
+    flex-direction: column;
+}
+
+.e-services-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.e-services-title hr {
+    border: none;
+    height:2px;
+    background-color: white;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.e-services-title h2 {
+    color: white;
+    padding-bottom: 6px;
+}
+
+.e-services-details {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.e-services-details a {
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+}
+
+.e-services-details a:hover {
+    color: #464CAC;
+}
+
+.related-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-links-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.related-links-title {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.related-links-header hr {
+    border: none;
+    height:2px;
+    background-color: white;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.related-links-header h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.related-links-title a {
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+}
+
+.related-links-title a:hover {
+    color: #464CAC;
+}
+
+.directions {
+    display: flex;
+    flex-direction: column;
+}
+
+.directions-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.directions-title hr {
+    border: none;
+    height:2px;
+    background-color: white;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.directions-title h2 {
+    color: white;
+    padding-bottom: 15px;
 }
 
 /* footer */
@@ -608,13 +734,24 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .copyright-r p {
     font-size: medium;
     font-weight: 700;
+    color: black;
 }
+
+.copyright-r a {
+    text-decoration: none;
+}
+
+.social-icons-footer {
+    display: flex;
+    gap: 20px;
+}
+
 
 @media screen and (max-width: 768px){
     .main-header-t {
@@ -710,14 +847,29 @@ nav ul li a:hover {
         margin: -8px;
     }
     .copyright {
+        display: flex;
+        flex-direction: column;
         margin: 0;
+        padding: 0;
         padding-top: 20px;
         padding-bottom: -50px;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
     }
-    .copyright-r p {
+    .copyright-p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .copyright-l p{
+        font-size: small;
+    }
+    .copyright-r p{
         display: none;
+    }
+    .social-icons-footer {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 15px;
     }
 }

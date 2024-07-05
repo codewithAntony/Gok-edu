@@ -199,7 +199,6 @@ nav ul li a:hover {
 .bread {
     display: flex;
     flex-direction: column;
-    
     margin-left: 100px;
     margin-right: 100px;
     gap: 15px;
@@ -242,6 +241,7 @@ nav ul li a:hover {
 
 .active, .accordion:hover {
     background-color: white;
+    color: black;
 }
 
 .accordion:after {
@@ -292,4 +292,72 @@ nav ul li a:hover {
 .copyright-r p {
     font-size: medium;
     font-weight: 700;
+    color: black;
+}
+
+.copyright-r a {
+    text-decoration: none;
+}
+
+.social-icons-footer {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header-t {
+    flex-direction: row;
+    align-items:normal;
+    gap: 30px;
+    }
+    .social-icons {
+        gap: 10px;
+        margin-top: 0;
+    }
+    .header-contacts {
+        flex-direction: column;
+        gap: 6px;
+    }
+    .search-bar {
+        display: none;
+    }
+    .header-b img{
+        width: 10%;
+        height: 10%;
+    }
+    .navbar ul{
+        gap: 20px;
+        align-items: center;
+    }
+    .bread {
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: -50px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .copyright-p {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .copyright-l p{
+        font-size: small;
+    }
+    .copyright-r p{
+        display: none;
+    }
+    .social-icons-footer {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
 }
