@@ -134,7 +134,7 @@
 .header-b img {
     width: 40%;
 }
-
+/*navbar*/
 .navbar {
     display: flex;
     justify-content: center;
@@ -208,7 +208,7 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
-hr {
+.dropdown-content hr {
     border: 0;
     height: 1px;
     background: #835835;
