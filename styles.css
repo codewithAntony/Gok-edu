@@ -4,14 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    display: flex;
-}
 
 .header-t {
     display: flex;
     justify-content: space-between;
-    background-color: #24C4BC;
+    background-color: #008205;
     padding: 6px 60px;
     
 }
@@ -34,7 +31,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #1DA1F2; /* Twitter blue */
+    background-color: #1DA1F2; 
     border-radius: 50%;
     color: white;
     font-size: 24px;
@@ -46,7 +43,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #1877F2; /* Twitter blue */
+    background-color: #1877F2; 
     border-radius: 50%;
     color: white;
     font-size: 24px;
@@ -58,7 +55,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #0077B5; /* Twitter blue */
+    background-color: #0077B5; 
     border-radius: 50%;
     color: white;
     font-size: 24px;
@@ -70,7 +67,7 @@
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: #FF0000; /* Twitter blue */
+    background-color: #FF0000; 
     border-radius: 50%;
     color: white;
     font-size: 24px;
@@ -100,19 +97,6 @@
     color: #464CAC;
 }
 
-.user-portal {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-}
-
-.user-portal span:first-of-type {
-    color: #464CAC;
-}
-
 .search-bar {
     display: flex;
     align-items: center;
@@ -138,7 +122,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #24C4BC;
+    background-color: #008205;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -163,6 +147,7 @@
     display: block;
     text-decoration: none;
     color: black;
+    transition: transform 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -395,7 +380,7 @@ nav ul li a:hover {
 
 .main-regulator svg {
     width: 70%;
-    color: #24C4BC;
+    color: #008205;
 }
 
 .regulator-title {
@@ -406,7 +391,7 @@ nav ul li a:hover {
 
 .regulator-title p:first-of-type {
     font-weight: bold;
-    color: #24C4BC;
+    color: #008205;
     padding-bottom: 15px;
 }
 
@@ -425,7 +410,7 @@ nav ul li a:hover {
 
 .main-accreditation svg {
     width: 70%;
-    color: #24C4BC;
+    color: #008205;
 }
 
 .main-accreditation:hover {
@@ -442,7 +427,7 @@ nav ul li a:hover {
 
 .accreditation-title p:first-of-type {
     font-weight: bold;
-    color: #24C4BC;
+    color: #008205;
     padding-bottom: 15px;
 }
 
@@ -467,7 +452,7 @@ nav ul li a:hover {
 
 .main-bar svg {
     width: 70%;
-    color: #24C4BC;
+    color: #008205;
 }
 
 .bar-title {
@@ -478,7 +463,7 @@ nav ul li a:hover {
 
 .bar-title p:first-of-type {
     font-weight: bold;
-    color: #24C4BC;
+    color: #008205;
     padding-bottom: 15px;
 }
 
@@ -503,7 +488,7 @@ nav ul li a:hover {
 .main-metrics hr {
     border: none;
     height: 4px;
-    background-color: #24C4BC;
+    background-color: #008205;
     margin: 5px auto;
     width: 16%;
     margin-bottom: 50px;
@@ -533,7 +518,7 @@ nav ul li a:hover {
 .inner-circle {
     width: 55px;
     height: 55px;
-    background-color: #24C4BC;
+    background-color: #008205;
     border: gray;
     border-radius: 50%;
     display: flex;
@@ -559,7 +544,7 @@ nav ul li a:hover {
 
 /* Contact info */
 .contact {
-    background-color: #24C4BC;
+    background-color: #008205;
     padding-top: 55px;
     padding-bottom: 85px;
     margin: 50px 250px;
@@ -605,9 +590,13 @@ nav ul li a:hover {
 .copyright {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 120px;
     padding-right: 120px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #E5E4E2;
+    margin: 0;
 }
 
 .copyright-l {
@@ -644,6 +633,10 @@ nav ul li a:hover {
     }
     .search-bar {
         display: none;
+    }
+    .header-b img{
+        width: 10%;
+        height: 10%;
     }
     .navbar ul{
         gap: 20px;
@@ -717,8 +710,12 @@ nav ul li a:hover {
         margin: -8px;
     }
     .copyright {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: -50px;
         flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        gap: 30px;
     }
     .copyright-r p {
         display: none;
