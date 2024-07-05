@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* header */
 .header {
     display: flex;
 }
@@ -162,7 +162,7 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-    color: #835835;
+    color: #008205;
 }
 
 .dropdown:hover .dropdown-content {
@@ -186,7 +186,7 @@ nav ul li a:hover {
 .dropdown-content hr {
     border: 0;
     height: 1px;
-    background: #835835;
+    background: #008205;
 }
 
 /* contact */
@@ -581,14 +581,28 @@ nav ul li a:hover {
 /*mobile view */
 
 @media screen and (max-width: 768px) {
+
+    /* header */
+    .header-t {
+        padding: 0;
+        margin: 0;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+    }
     .main-header-t {
-    flex-direction: row;
-    align-items:normal;
-    gap: 30px;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
     }
     .social-icons {
+        display: flex;
         gap: 10px;
         margin-top: 0;
+    }
+    .phone-no {
+        display: none;
     }
     .header-contacts {
         flex-direction: column;
@@ -601,15 +615,45 @@ nav ul li a:hover {
         width: 10%;
         height: 10%;
     }
+
+    /* navbar */
+    .navbar {
+        padding: 0;
+        margin: 0;
+        padding: 10px 5px;
+    }
     .navbar ul{
         gap: 20px;
+        font-size: large;
         align-items: center;
     }
+    .navbar a:hover {
+    color: #FFFFFF;
+    }
+    .navbar a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: transform 0.3s ease;
+    }
+
+    /* contact-us */
     .bread {
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding-top: 0;
+        padding: 20px;
+    }
+    .bread-l {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0 0;
+    }
+    .bread-l-contact {
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
     }
     .bread-l-header h2 {
         font-weight: 400;
@@ -617,7 +661,7 @@ nav ul li a:hover {
     }
     .bread-l-info {
         flex-direction: column;
-        padding-top: 10px;
+        padding: 10px 1px;
         margin: 0;
     }
     .circle {
@@ -684,7 +728,7 @@ nav ul li a:hover {
         font-size: small;
     }
     .bread-r {
-        margin: 0;
+        margin: 0 20px;
         margin-top: -80px;
         flex-direction: column;
     }
@@ -692,12 +736,23 @@ nav ul li a:hover {
         display: flex;
         flex-direction: column;
     }
+    .container label {
+        font-size: large;
+    }
+    .contact-subject label {
+        font-size: small;
+    }
+    .contact-message label {
+        font-size: small;
+    }
     .contact-details {
         flex-direction: column;
     }
     .contact-details label {
         font-size: small;
     }
+
+    /* footer */
     .copyright {
         display: flex;
         flex-direction: column;

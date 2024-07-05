@@ -1,10 +1,11 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* header */
 .header-t {
     display: flex;
     justify-content: space-between;
@@ -172,7 +173,7 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-    color: #835835;
+    color: #008205;
 }
 
 .dropdown:hover .dropdown-content {
@@ -196,10 +197,11 @@ nav ul li a:hover {
 .dropdown-content hr {
     border: 0;
     height: 1px;
-    background: #835835;
+    background: #008205;
 }
 
-/* Slideshow container */
+/*image carousel*/
+
 .slideshow-container {
     position: relative;
     width: 100%;
@@ -207,32 +209,39 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-/* Hide the images by default */
-.slideshow-inner {
-    display: flex;
-    height: 100%;
-    transition: transform 0.5s ease-in-out;
+.slide {
+    display: none;
 }
 
-.mySlides-fade {
-    min-width: 100%;
-    height: 100%;
-}
-
-.mySlides-fade img{
+img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    vertical-align: middle;
 }
 
-/* Next & previous buttons */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
     padding: 16px;
+    margin-top: -22px;
     color: white;
     font-weight: bold;
     font-size: 18px;
@@ -241,18 +250,21 @@ nav ul li a:hover {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/bullets/indicators */
+.dots-container {
+    text-align: center;
+    padding: 20px;
+    
+}
+
 .dot {
     cursor: pointer;
     height: 10px;
@@ -268,16 +280,6 @@ nav ul li a:hover {
     background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
 
 /* intro to cle*/
 .container {
@@ -754,15 +756,27 @@ nav ul li a:hover {
 
 
 @media screen and (max-width: 768px){
+    /*header*/
+    .header-t {
+        padding: 0;
+        margin: 0;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+    }
     .main-header-t {
-        flex-direction: row;
-        align-items:normal;
+        display: flex;
         gap: 30px;
-        
+        margin: 0;
+        padding: 0;
     }
     .social-icons {
+        display: flex;
         gap: 10px;
         margin-top: 0;
+    }
+    .phone-no {
+        display: none;
     }
     .header-contacts {
         flex-direction: column;
@@ -771,14 +785,35 @@ nav ul li a:hover {
     .search-bar {
         display: none;
     }
+
+    /*logo*/
     .header-b img{
         width: 10%;
         height: 10%;
     }
+
+    /* nav bar */
+    .navbar {
+        padding: 0;
+        margin: 0;
+        padding: 10px 5px;
+    }
     .navbar ul{
+        font-size: large;
         gap: 20px;
         align-items: center;
     }
+    .navbar a:hover {
+    color: #FFFFFF;
+    }
+    .navbar a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: transform 0.3s ease;
+    }
+
+    /* image carousel */
     .slideshow-container {
         width: 100%;
         height: 80%;
@@ -786,6 +821,8 @@ nav ul li a:hover {
     .dot {
         margin-top: -10px;
     }
+
+    /*intro to cle */
     .container {
         flex-direction: column;
     }
@@ -803,11 +840,16 @@ nav ul li a:hover {
         font-weight: 500;
         margin-bottom: 0;
     }
+
+    /* services */
     .main-services {
         flex-direction: column;
-        margin-top: 0;
-        padding-right: 40px;
-        padding-left: 40px;
+        padding: 0;
+        margin: 0;
+        padding: 40px 40px;
+    }
+    .main-services h2 {
+        font-size: large;
     }
     .main-services hr {
         display: none;
@@ -824,10 +866,17 @@ nav ul li a:hover {
     .main-bar svg{
         width: 100%;
     }
+
+    /* performance metrics */
     .main-metrics {
         display: flex;
         flex-direction: column;
-        margin-top: -20px;
+        padding: 10px 10px;
+        margin-top: -80px;
+        margin: 0;
+    }
+    .main-metrics h2{
+        font-size: large;
     }
     .main-metrics hr{
         display: none;
@@ -836,9 +885,18 @@ nav ul li a:hover {
         flex-direction: column;
         gap: 30px;
     }
+    .metrics .inner-circle {
+        width: 60%;
+        height: 60%;
+    }
     .performance-metric {
         gap: 20px;
     }
+    .candidates span {
+        font-size: small;
+    }
+
+    /* contact info */
     .contact {
         margin: 0;
         padding-top: 30px;
@@ -846,6 +904,29 @@ nav ul li a:hover {
     .contact-bread {
         margin: -8px;
     }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .contact-info-title span {
+        font-size: small;
+    }
+    .contact-info-title h2 {
+        font-size: small;
+    }
+    .contact h2 {
+        font-size: large;
+    }
+    .contact span {
+        font-size: small;
+    }
+    .e-services {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* footer */
     .copyright {
         display: flex;
         flex-direction: column;

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <div class="header-t">
         <div class="main-header-t">
             <div class="social-icons">
@@ -20,8 +21,6 @@
                             d="M22 5.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.343 8.343 0 0 1-2.605.981A4.13 4.13 0 0 0 15.85 4a4.068 4.068 0 0 0-4.1 4.038c0 .31.035.618.105.919A11.705 11.705 0 0 1 3.4 4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 6.1 13.635a4.192 4.192 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 2 18.184 11.732 11.732 0 0 0 8.291 20 11.502 11.502 0 0 0 19.964 8.5c0-.177 0-.349-.012-.523A8.143 8.143 0 0 0 22 5.892Z"
                             clip-rule="evenodd" />
                     </svg>
-
-
                 </a>
                 <a href="#" class="facebook"><svg class="w-[12px] h-[12px] text-gray-800 dark:text-white"
                         aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -98,7 +97,7 @@
                 <div class="dropdown-content">
                     <a href="/services/services.html">Service 1</a>
                     <hr>
-                    <a href="/services">Service 2</a>
+                    <a href="/services2/services_2.html">Service 2</a>
                     <hr>
                 </div>
             </li>
@@ -108,33 +107,28 @@
 
     <!--image carousel -->
     <div class="slideshow-container">
-        <div class="slideshow-inner">
-            <div class="mySlides fade">
-                <img src="/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" style="width: 100%;">
-            </div>
-            <div class="mySlides fade">
-                <img src="/images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" style="width: 100%;">
-            </div>
-            <div class="mySlides fade">
-                <img src="/images/luca-bravo-9l_326FISzk-unsplash.jpg" style="width: 100%;">
-            </div>
-            <div class="mySlides fade">
-                <img src="/images/luke-chesser-rCOWMC8qf8A-unsplash.jpg" style="width: 100%;">
-            </div>
+        <div class="slide fade">
+            <img src="/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="Image 1">
         </div>
-
-        <!-- Next and previous buttons -->
+        <div class="slide fade">
+            <img src="/images/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="/images/luca-bravo-9l_326FISzk-unsplash.jpg" alt="Image 3">
+        </div>
+        <div class="slide fade">
+            <img src="/images/luke-chesser-rCOWMC8qf8A-unsplash.jpg" alt="Image 4">
+        </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
+    <div class="dots-container">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+
 
     <!-- intro to Cle -->
     <div class="container">
