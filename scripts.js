@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const counter3 = document.getElementById('counter3');
 
     // Start the animation for each counter
-    animateCounter(counter1, 12510, 2000); // Counter 1: Target 2800, Duration 2000ms
-    animateCounter(counter2, 25, 2000); // Counter 2: Target 1500, Duration 2000ms
-    animateCounter(counter3, 1217, 2000); // Counter 3: Target 3200, Duration 2000ms
+    animateCounter(counter1, 1000, 5000); // Counter 1: Target 2800, Duration 2000ms
+    animateCounter(counter2, 5, 3000); // Counter 2: Target 1500, Duration 2000ms
+    animateCounter(counter3, 1000, 5000); // Counter 3: Target 3200, Duration 2000ms
 });
 
