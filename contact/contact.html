@@ -169,20 +169,20 @@
                     <h4>Get in Touch</h4>
                 </div>
                 <div class="container">
-                    <form class="container-t" action="">
+                    <form class="container-t" action="send-email.php">
                         <div class="contact-details">
                             <div class="contact-name">
                                 <label for="fname">Your Name</label>
-                                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name" required>
                             </div>
                             <div class="contact-email">
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your Email">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
                             </div>
                         </div>
                         <div class="contact-subject">
-                            <label for="select">Subject Area</label>
-                            <select class="contact-options" id="select" name="select">
+                            <label for="subject">Subject </label>
+                            <select class="contact-options" id="subject" name="subject" required>
                                 <option value="-select-">-Select-</option>
                                 <option value="enquiries">Enquiries</option>
                                 <option value="feedback">Feedback</option>
@@ -191,8 +191,9 @@
                         </div>
 
                         <div class="contact-message">
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Message" style="height:200px"
+                                required></textarea>
                             <input type="submit" value="Send Message">
                         </div>
 
